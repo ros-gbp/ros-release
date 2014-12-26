@@ -1,0 +1,12 @@
+Source: ros-jade-rosbash
+Section: misc
+Priority: extra
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin (>= 0.5.72)
+Homepage: http://www.ros.org/wiki/rosbash
+Standards-Version: 3.9.2
+
+Package: ros-jade-rosbash
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-catkin
+Description: Assorted shell commands for using ros with bash.
