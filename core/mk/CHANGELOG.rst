@@ -2,6 +2,9 @@
 Changelog for package mk
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.10.11 (2014-12-29)
+--------------------
+
 1.10.10 (2014-06-02)
 --------------------
 * add missing run dependency on rosbuild (`#47 <https://github.com/ros/ros/issues/47>`_)
