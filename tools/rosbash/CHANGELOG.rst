@@ -2,6 +2,10 @@
 Changelog for package rosbash
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.10.11 (2014-12-29)
+--------------------
+* match behaviour of 'roscd' in zsh with bash (`#73 <https://github.com/ros/ros/pull/73>`_)
+
 1.10.10 (2014-06-02)
 --------------------
 
