@@ -1,0 +1,12 @@
+Source: ros-hydro-ros
+Section: misc
+Priority: extra
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Build-Depends: debhelper (>= 9.0.0), ros-hydro-catkin
+Homepage: http://www.ros.org/wiki/ROS
+Standards-Version: 3.9.2
+
+Package: ros-hydro-ros
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-catkin, ros-hydro-mk, ros-hydro-rosbash, ros-hydro-rosboost-cfg, ros-hydro-rosbuild, ros-hydro-rosclean, ros-hydro-roscreate, ros-hydro-roslang, ros-hydro-roslib, ros-hydro-rosmake, ros-hydro-rosunit
+Description: ROS packaging system
