@@ -383,15 +383,9 @@ class VersionControl(object):
         @param url: URL associated with version control. must be non empty
         @type  url: str
         """
-        def is_string_type(obj):
-            try:
-                return isinstance(obj, basestring)
-            except NameError:
-                return isinstance(obj, str)
-
-        if not type_ or not is_string_type(type_):
+        if not type_ or not isinstance(type_, basestring):
             raise ValueError("bad 'type' attribute")
-        if not url is None and not is_string_type(url):
+        if not url is None and not isinstance(url, basestring):
             raise ValueError("bad 'url' attribute")
         self.type = type_
         self.url = url

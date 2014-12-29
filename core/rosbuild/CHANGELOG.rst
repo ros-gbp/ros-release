@@ -2,35 +2,13 @@
 Changelog for package rosbuild
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.12.0 (2014-12-26)
--------------------
-
-1.11.6 (2014-12-22)
--------------------
+1.10.11 (2014-12-29)
+--------------------
 * fix dry clean-test-results target (`#71 <https://github.com/ros/ros/issues/71>`_)
 
-1.11.5 (2014-08-18)
--------------------
-
-1.11.4 (2014-07-23)
--------------------
-* fix dry rosboost_cfg to support finding boost in multiarch lib folder (`#62 <https://github.com/ros/ros/issues/62>`_)
-
-1.11.3 (2014-07-18)
--------------------
-* suppress warning for rosbuild target "test" with CMake 3.0 (`#61 <https://github.com/ros/ros/issues/61>`_)
-
-1.11.2 (2014-06-16)
--------------------
-
-1.11.1 (2014-05-07)
--------------------
+1.10.10 (2014-06-02)
+--------------------
 * fix CMake warning with 2.8.12 and newer (`#44 <https://github.com/ros/ros/issues/44>`_)
-* use catkin_install_python() to install Python scripts (`#46 <https://github.com/ros/ros/issues/46>`_)
-* python 3 compatibility
-
-1.11.0 (2014-01-31)
--------------------
 * ensure escaping of preprocessor definition (`#43 <https://github.com/ros/ros/issues/43>`_)
 
 1.10.9 (2014-01-07)

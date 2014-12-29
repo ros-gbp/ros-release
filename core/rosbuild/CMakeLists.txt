@@ -19,10 +19,10 @@ install(FILES
   core/rosbuild/rosconfig.cmake
   core/rosbuild/rostoolchain.cmake
   DESTINATION ${CATKIN_GLOBAL_SHARE_DESTINATION}/ros/core/rosbuild)
-catkin_install_python(PROGRAMS
+install(FILES
   tests/count_cores.py
   DESTINATION ${CATKIN_GLOBAL_SHARE_DESTINATION}/ros/core/rosbuild/tests)
-catkin_install_python(PROGRAMS
+install(PROGRAMS
   core/rosbuild/bin/check_same_directories.py
   core/rosbuild/bin/download_checkmd5.py
   DESTINATION ${CATKIN_GLOBAL_SHARE_DESTINATION}/ros/core/rosbuild/bin)

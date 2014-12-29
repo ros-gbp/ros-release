@@ -2,37 +2,13 @@
 Changelog for package roslib
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.12.0 (2014-12-26)
--------------------
-* update ROS_DISTRO to jade
-
-1.11.6 (2014-12-22)
--------------------
+1.10.11 (2014-12-29)
+--------------------
 * consider std_msgs/Header to be a valid header in rosbuild-based messages (`#67 <https://github.com/ros/ros/pull/67>`_)
 
-1.11.5 (2014-08-18)
--------------------
-
-1.11.4 (2014-07-23)
--------------------
-
-1.11.3 (2014-07-18)
--------------------
-* remove linking against "rt" library on Android (`#57 <https://github.com/ros/ros/issues/57>`_)
-* disable delayed expansion in Windows environment hook (`#60 <https://github.com/ros/ros/issues/60>`_)
-
-1.11.2 (2014-06-16)
--------------------
-* use PYTHON_EXECUTABLE in environment hooks (`#55 <https://github.com/ros/ros/issues/55>`_)
-
-1.11.1 (2014-05-07)
--------------------
-* add optional argument force_recrawl to getPlugins() function
-* use catkin_install_python() to install Python scripts (`#46 <https://github.com/ros/ros/issues/46>`_)
-* python 3 compatibility
-
-1.11.0 (2014-01-31)
--------------------
+1.10.10 (2014-06-02)
+--------------------
+* add optional argument force_recrawl to getPlugins function
 
 1.10.9 (2014-01-07)
 -------------------

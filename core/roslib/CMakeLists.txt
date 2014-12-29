@@ -19,7 +19,7 @@ endif()
 add_library(roslib src/package.cpp)
 target_link_libraries(roslib ${Boost_LIBRARIES} ${catkin_LIBRARIES})
 
-if(NOT (APPLE OR WIN32 OR MINGW OR ANDROID))
+if(NOT (APPLE OR WIN32 OR MINGW))
   target_link_libraries(roslib rt)
 endif()
 
@@ -40,7 +40,7 @@ install(DIRECTORY include/
   DESTINATION ${CATKIN_GLOBAL_INCLUDE_DESTINATION}
   FILES_MATCHING PATTERN "*.h"
   PATTERN ".svn" EXCLUDE)
-catkin_install_python(PROGRAMS scripts/gendeps
+install(PROGRAMS scripts/gendeps
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 
 if(CATKIN_ENABLE_TESTING)
