@@ -1,0 +1,12 @@
+Source: ros-hydro-mk
+Section: misc
+Priority: extra
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Build-Depends: debhelper (>= 9.0.0), ros-hydro-catkin (>= 0.5.69)
+Homepage: http://www.ros.org/wiki/ROS
+Standards-Version: 3.9.2
+
+Package: ros-hydro-mk
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-rosbuild
+Description: A collection of .mk include files for building ROS architectural elements. Most package authors should use cmake .mk, which calls CMake for the build of the package. The other files in this package are intended for use in exotic situations that mostly arise when importing 3rdparty code.
