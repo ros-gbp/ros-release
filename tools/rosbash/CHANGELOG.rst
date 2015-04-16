@@ -2,12 +2,35 @@
 Changelog for package rosbash
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.10.11 (2014-12-29)
---------------------
-* match behaviour of 'roscd' in zsh with bash (`#73 <https://github.com/ros/ros/pull/73>`_)
+1.11.7 (2015-04-16)
+-------------------
+* add support for fish shell (`#77 <https://github.com/ros/ros/pull/77>`_)
+* enable roslaunch args completion in rosbash
 
-1.10.10 (2014-06-02)
---------------------
+1.11.6 (2014-12-22)
+-------------------
+* match behaviour of 'roscd' in zsh with bash (`#73 <https://github.com/ros/ros/pull/73>`_)
+* improve rosbag zsh tab completion for bag files (`#70 <https://github.com/ros/ros/issues/70>`_)
+
+1.11.5 (2014-08-18)
+-------------------
+* fix zsh autocompletion for published topics, msg-type and YAML (`#64 <https://github.com/ros/ros/issues/64>`_)
+
+1.11.4 (2014-07-23)
+-------------------
+
+1.11.3 (2014-07-18)
+-------------------
+
+1.11.2 (2014-06-16)
+-------------------
+
+1.11.1 (2014-05-07)
+-------------------
+* add rosrun --prefix, update completion (`#52 <https://github.com/ros/ros/issues/52>`_)
+
+1.11.0 (2014-01-31)
+-------------------
 
 1.10.9 (2014-01-07)
 -------------------
