@@ -2,6 +2,9 @@
 Changelog for package rosbuild
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.11.7 (2015-04-16)
+-------------------
+
 1.11.6 (2014-12-22)
 -------------------
 * fix dry clean-test-results target (`#71 <https://github.com/ros/ros/issues/71>`_)
