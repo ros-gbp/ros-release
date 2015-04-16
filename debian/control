@@ -1,0 +1,12 @@
+Source: ros-indigo-roslib
+Section: misc
+Priority: extra
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, ros-indigo-catkin (>= 0.6.7), ros-indigo-rospack
+Homepage: http://ros.org/wiki/roslib
+Standards-Version: 3.9.2
+
+Package: ros-indigo-roslib
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-rospkg, ros-indigo-catkin, ros-indigo-rospack
+Description: Base dependencies and support libraries for ROS. roslib contains many of the common data structures and tools that are shared across ROS client library implementations.
