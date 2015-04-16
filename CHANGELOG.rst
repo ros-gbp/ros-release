@@ -2,6 +2,9 @@
 Changelog for package rosunit
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.11.7 (2015-04-16)
+-------------------
+
 1.11.6 (2014-12-22)
 -------------------
 * fix OSError handling (`#69 <https://github.com/ros/ros/pull/69>`_, regression since 1.11.1)
