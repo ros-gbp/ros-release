@@ -2,22 +2,19 @@
 Changelog for package rosbash
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.12.3 (2015-09-19)
+1.11.9 (2015-09-19)
 -------------------
 * fix roslaunch completion if path contains white spaces (`ros/ros_comm#658 <https://github.com/ros/ros_comm/issues/658>`_)
 * add rosconsole tab completion for bash (`#86 <https://github.com/ros/ros/pull/86>`_)
 * use --first-only option when calling catkin_find (`#83 <https://github.com/ros/ros/issues/83>`_)
 
-1.12.2 (2015-04-27)
+1.11.8 (2015-04-27)
 -------------------
 
-1.12.1 (2015-04-16)
+1.11.7 (2015-04-16)
 -------------------
 * add support for fish shell (`#77 <https://github.com/ros/ros/pull/77>`_)
 * enable roslaunch args completion in rosbash
-
-1.12.0 (2014-12-26)
--------------------
 
 1.11.6 (2014-12-22)
 -------------------
