@@ -2,6 +2,9 @@
 Changelog for package roslib
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.12.5 (2015-10-13)
+-------------------
+
 1.12.4 (2015-10-12)
 -------------------
 * improve performance by caching the package mapping in the rospack instance (`#95 <https://github.com/ros/ros/pull/95>`_)
