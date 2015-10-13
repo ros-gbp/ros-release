@@ -1,3 +1,35 @@
+## ros (jade) - 1.12.4-0
+
+The packages in the `ros` repository were released into the `jade` distro by running `/usr/bin/bloom-release -r jade -t jade ros` on `Tue, 13 Oct 2015 01:21:13 -0000`
+
+These packages were released:
+- `mk`
+- `ros`
+- `rosbash`
+- `rosboost_cfg`
+- `rosbuild`
+- `rosclean`
+- `roscreate`
+- `roslang`
+- `roslib`
+- `rosmake`
+- `rosunit`
+
+Version of package(s) in repository `ros`:
+- upstream repository: https://github.com/ros/ros.git
+- release repository: https://github.com/ros-gbp/ros-release.git
+- rosdistro version: `1.12.3-0`
+- old version: `1.12.3-0`
+- new version: `1.12.4-0`
+
+Versions of tools used:
+- bloom version: `0.5.20`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.4`
+- rosdistro version: `0.4.2`
+- vcstools version: `0.1.38`
+
+
 ## ros (indigo) - 1.11.10-0
 
 The packages in the `ros` repository were released into the `indigo` distro by running `/usr/bin/bloom-release -r indigo -t indigo ros` on `Tue, 13 Oct 2015 01:12:43 -0000`
