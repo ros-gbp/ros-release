@@ -1,0 +1,12 @@
+Source: ros-indigo-roslang
+Section: misc
+Priority: extra
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: http://ros.org/wiki/roslang
+Standards-Version: 3.9.2
+
+Package: ros-indigo-roslang
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-catkin, ros-indigo-genmsg
+Description: roslang is a common package that all ROS client libraries depend on. This is mainly used to find client libraries (via 'rospack depends-on1 roslang').
