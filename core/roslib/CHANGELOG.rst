@@ -2,26 +2,26 @@
 Changelog for package roslib
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.12.5 (2015-10-13)
--------------------
+1.11.12 (2016-03-10)
+--------------------
+* expose an API (ros::package::getPlugins) which can map multiple export values to one package name (`#103 <https://github.com/ros/ros/issues/103>`_)
 
-1.12.4 (2015-10-12)
--------------------
+1.11.11 (2015-10-13)
+--------------------
+
+1.11.10 (2015-10-12)
+--------------------
 * improve performance by caching the package mapping in the rospack instance (`#95 <https://github.com/ros/ros/pull/95>`_)
 
-1.12.3 (2015-09-19)
+1.11.9 (2015-09-19)
 -------------------
 
-1.12.2 (2015-04-27)
+1.11.8 (2015-04-27)
 -------------------
 
-1.12.1 (2015-04-16)
+1.11.7 (2015-04-16)
 -------------------
 * remove usage of CATKIN_TEST_RESULTS_DIR environment variable (`#80 <https://github.com/ros/ros/pull/80>`_)
-
-1.12.0 (2014-12-26)
--------------------
-* update ROS_DISTRO to jade
 
 1.11.6 (2014-12-22)
 -------------------
