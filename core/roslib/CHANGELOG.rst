@@ -2,6 +2,9 @@
 Changelog for package roslib
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.12.7 (2016-04-21)
+-------------------
+
 1.12.6 (2016-03-10)
 -------------------
 * expose an API (ros::package::getPlugins) which can map multiple export values to one package name (`#103 <https://github.com/ros/ros/issues/103>`_)
