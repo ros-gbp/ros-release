@@ -2,32 +2,27 @@
 Changelog for package rosunit
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.12.7 (2016-04-21)
--------------------
-* fix a regression in XML reports introduced in 1.12.6 (`#109 <https://github.com/ros/ros/pull/109>`_)
+1.11.13 (2016-06-27)
+--------------------
 
-1.12.6 (2016-03-10)
--------------------
-* remove invalid characters from XML unit test results (`#89 <https://github.com/ros/ros/pull/89>`_, `#108 <https://github.com/ros/ros/pull/108>`_)
+1.11.12 (2016-03-10)
+--------------------
 * add ability to load tests using dotnames in rosunit (`#101 <https://github.com/ros/ros/issues/101>`_)
 
-1.12.5 (2015-10-13)
+1.11.11 (2015-10-13)
+--------------------
+
+1.11.10 (2015-10-12)
+--------------------
+
+1.11.9 (2015-09-19)
 -------------------
 
-1.12.4 (2015-10-12)
--------------------
-
-1.12.3 (2015-09-19)
--------------------
-
-1.12.2 (2015-04-27)
+1.11.8 (2015-04-27)
 -------------------
 * allow custom environment when determining test results location (`#82 <https://github.com/ros/ros/pull/82>`_)
 
-1.12.1 (2015-04-16)
--------------------
-
-1.12.0 (2014-12-26)
+1.11.7 (2015-04-16)
 -------------------
 
 1.11.6 (2014-12-22)

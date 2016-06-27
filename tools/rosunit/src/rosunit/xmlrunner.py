@@ -20,10 +20,7 @@ try:
 except ImportError:
     from io import StringIO
 from xml.sax.saxutils import escape
-import xml.etree.ElementTree as ET
 
-def cdata(cdata_text):
-    return '<![CDATA[\n{}\n]]>'.format(cdata_text)
 
 class _TestInfo(object):
 
@@ -58,26 +55,22 @@ class _TestInfo(object):
         info._error = error
         return info
 
-    def xml(self):
-        """Create an XML tag with information about this test case.
-
-        """
-        testcase = ET.Element("testcase")
-        testcase.set('classname', self._class)
-        testcase.set('name', self._method)
-        testcase.set('time', '%.4f' % self._time)
-        if self._failure != None:
-            self._print_error(testcase, 'failure', self._failure)
-        if self._error != None:
-            self._print_error(testcase, 'error', self._error)
-        return testcase
-
     def print_report(self, stream):
         """Print information about this test case in XML format to the
         supplied stream.
 
         """
-        stream.write(ET.tostring(self.xml()))
+        stream.write('  <testcase classname="%(class)s" name="%(method)s" time="%(time).4f">' % \
+            {
+                "class": self._class,
+                "method": self._method,
+                "time": self._time,
+            })
+        if self._failure != None:
+            self._print_error(stream, 'failure', self._failure)
+        if self._error != None:
+            self._print_error(stream, 'error', self._error)
+        stream.write('</testcase>\n')
 
     def print_report_text(self, stream):
         #stream.write('  <testcase classname="%(class)s" name="%(method)s" time="%(time).4f">' % \
@@ -96,16 +89,17 @@ class _TestInfo(object):
         if self._failure == None and self._error == None:
             stream.write(' ... ok\n')
 
-    def _print_error(self, testcase, tagname, error):
-        """
-        Append an XML tag with information from a failure or error to the
-        supplied testcase.
-        """
-        tag = ET.SubElement(testcase, tagname)
-        tag.set('type', str(error[0].__name__))
+    def _print_error(self, stream, tagname, error):
+        """Print information from a failure or error to the supplied stream."""
+        text = escape(str(error[1]))
+        stream.write('\n')
+        stream.write('    <%s type="%s">%s\n' \
+            % (tagname, str(error[0].__name__), text))
         tb_stream = StringIO()
         traceback.print_tb(error[2], None, tb_stream)
-        tag.text ='%s\n%s' % (str(error[1]), tb_stream.getvalue())
+        stream.write(escape(tb_stream.getvalue()))
+        stream.write('    </%s>\n' % tagname)
+        stream.write('  ')
 
     def _print_error_text(self, stream, tagname, error):
         """Print information from a failure or error to the supplied stream."""
@@ -158,31 +152,6 @@ class _XMLTestResult(unittest.TestResult):
         unittest.TestResult.addFailure(self, test, err)
         self._failure = err
 
-    def filter_nonprintable_text(self, text):
-        invalid_chars = re.compile(ur'[^\x09\x0A\x0D\x20-\x7E\x85\xA0-\xFF\u0100-\uD7FF\uE000-\uFDCF\uFDE0-\uFFFD]')
-        def invalid_char_replacer(m):
-            return "&#x"+('%04X' % ord(m.group(0)))+";"
-        return re.sub(invalid_chars, invalid_char_replacer, str(text))
-
-    def xml(self, time_taken, out, err):
-        """
-        @return XML tag representing the object
-        @rtype: xml.etree.ElementTree.Element
-        """
-        test_suite = ET.Element('testsuite')
-        test_suite.set('errors', str(len(self.errors)))
-        test_suite.set('failures', str(len(self.failures)))
-        test_suite.set('name', self._test_name)
-        test_suite.set('tests', str(self.testsRun))
-        test_suite.set('time', '%.3f' % time_taken)
-        for info in self._tests:
-            test_suite.append(info.xml())
-        system_out = ET.SubElement(test_suite, 'system-out')
-        system_out.text = cdata(self.filter_nonprintable_text(out))
-        system_err = ET.SubElement(test_suite, 'system-err')
-        system_err.text = cdata(self.filter_nonprintable_text(err))
-        return ET.ElementTree(test_suite)
-
     def print_report(self, stream, time_taken, out, err):
         """Prints the XML report to the supplied stream.
         
@@ -190,7 +159,19 @@ class _XMLTestResult(unittest.TestResult):
         output and standard error streams must be passed in.a
 
         """
-        stream.write(ET.tostring(self.xml(time_taken, out, err).getroot(), encoding='utf-8', method='xml'))
+        stream.write('<testsuite errors="%(e)d" failures="%(f)d" ' % \
+            { "e": len(self.errors), "f": len(self.failures) })
+        stream.write('name="%(n)s" tests="%(t)d" time="%(time).3f">\n' % \
+            {
+                "n": self._test_name,
+                "t": self.testsRun,
+                "time": time_taken,
+            })
+        for info in self._tests:
+            info.print_report(stream)
+        stream.write('  <system-out><![CDATA[%s]]></system-out>\n' % out)
+        stream.write('  <system-err><![CDATA[%s]]></system-err>\n' % err)
+        stream.write('</testsuite>\n')
 
     def print_report_text(self, stream, time_taken, out, err):
         """Prints the text report to the supplied stream.
@@ -266,6 +247,9 @@ class XMLTestRunner(object):
         result.print_report(stream, time_taken, out_s, err_s)
 
         result.print_report_text(sys.stdout, time_taken, out_s, err_s)
+        
+        if self._stream == None:
+            stream.close()
 
         return result
 
