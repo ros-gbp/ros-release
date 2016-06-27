@@ -2,6 +2,9 @@
 Changelog for package rosunit
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.11.13 (2016-06-27)
+--------------------
+
 1.11.12 (2016-03-10)
 --------------------
 * add ability to load tests using dotnames in rosunit (`#101 <https://github.com/ros/ros/issues/101>`_)
