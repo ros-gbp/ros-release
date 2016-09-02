@@ -2,6 +2,10 @@
 Changelog for package rosbash
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.13.2 (2016-09-02)
+-------------------
+* add missing verbs to rosservice completion (`#117 <https://github.com/ros/ros/pull/117>`_)
+
 1.13.1 (2016-03-13)
 -------------------
 
