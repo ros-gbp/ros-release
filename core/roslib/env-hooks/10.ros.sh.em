@@ -3,10 +3,10 @@
 # scrub old ROS bin dirs, to avoid accidentally finding the wrong executables
 export PATH="`@(PYTHON_EXECUTABLE) -c \"import os; print(os.pathsep.join([x for x in \\\"$PATH\\\".split(os.pathsep) if not any([d for d in ['cturtle', 'diamondback', 'electric', 'fuerte'] if d in x])]))\"`"
 
-if [ -n "$ROS_DISTRO" -a "$ROS_DISTRO" != "indigo" ]; then
+if [ -n "$ROS_DISTRO" -a "$ROS_DISTRO" != "kinetic" ]; then
   echo "ROS_DISTRO was set to '$ROS_DISTRO' before. Please make sure that the environment does not mix paths from different distributions."
 fi
-export ROS_DISTRO=indigo
+export ROS_DISTRO=kinetic
 
 # python function to generate ROS package path based on all workspaces
 PYTHON_CODE_BUILD_ROS_PACKAGE_PATH=$(cat <<EOF
@@ -23,7 +23,8 @@ for workspace in workspaces:
         data = f.read()
     if data == '':
         paths.append(os.path.join(workspace, 'share'))
-        paths.append(os.path.join(workspace, 'stacks'))
+        if os.path.isdir(os.path.join(workspace, 'stacks')):
+            paths.append(os.path.join(workspace, 'stacks'))
     else:
         for source_path in data.split(';'):
             paths.append(source_path)
