@@ -2,6 +2,9 @@
 Changelog for package rosbash
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.13.4 (2016-09-19)
+-------------------
+
 1.13.3 (2016-09-16)
 -------------------
 * fix spelling of 'rosed' in usage (`#118 <https://github.com/ros/ros/pull/118>`_)
