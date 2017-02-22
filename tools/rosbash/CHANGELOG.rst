@@ -2,6 +2,9 @@
 Changelog for package rosbash
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.14.0 (2017-02-22)
+-------------------
+
 1.13.5 (2017-02-14)
 -------------------
 * add completion for "rosmsg info" (`#138 <https://github.com/ros/ros/pull/138>`_)
