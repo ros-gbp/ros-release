@@ -2,30 +2,13 @@
 Changelog for package rosbash
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.14.0 (2017-02-22)
+1.12.8 (2017-03-06)
 -------------------
-
-1.13.5 (2017-02-14)
--------------------
-* add completion for "rosmsg info" (`#138 <https://github.com/ros/ros/pull/138>`_)
 * add "rostopic pub" completion for message type (`#132 <https://github.com/ros/ros/pull/132>`_)
-* fix "rostopic pub" completion when options are provided (`#131 <https://github.com/ros/ros/pull/131>`_)
-
-1.13.4 (2016-09-19)
--------------------
-
-1.13.3 (2016-09-16)
--------------------
 * fix spelling of 'rosed' in usage (`#118 <https://github.com/ros/ros/pull/118>`_)
-
-1.13.2 (2016-09-02)
--------------------
 * add missing verbs to rosservice completion (`#117 <https://github.com/ros/ros/pull/117>`_)
 
-1.13.1 (2016-03-13)
--------------------
-
-1.13.0 (2016-03-10)
+1.12.7 (2016-04-21)
 -------------------
 
 1.12.6 (2016-03-10)

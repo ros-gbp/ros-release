@@ -2,32 +2,15 @@
 Changelog for package rosunit
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.14.0 (2017-02-22)
--------------------
-
-1.13.5 (2017-02-14)
+1.12.8 (2017-03-06)
 -------------------
 * improve error message when creating test directory fails (`#134 <https://github.com/ros/ros/pull/134>`_)
 * fix race condition creating folder (`#130 <https://github.com/ros/ros/pull/130>`_)
+* fix check of test type (`#121 <https://github.com/ros/ros/issues/121>`_, `#123 <https://github.com/ros/ros/issues/123>`_)
 
-1.13.4 (2016-09-19)
--------------------
-* fix test type handling (`#123 <https://github.com/ros/ros/issues/123>`_)
-
-1.13.3 (2016-09-16)
--------------------
-* allow custom class_name, testcase_name in test_xx_junit_xml (`#119 <https://github.com/ros/ros/issues/119>`_)
-* fix check of test type (`#121 <https://github.com/ros/ros/issues/121>`_)
-
-1.13.2 (2016-09-02)
--------------------
-
-1.13.1 (2016-03-13)
+1.12.7 (2016-04-21)
 -------------------
 * fix a regression in XML reports introduced in 1.12.6 (`#109 <https://github.com/ros/ros/pull/109>`_)
-
-1.13.0 (2016-03-10)
--------------------
 
 1.12.6 (2016-03-10)
 -------------------

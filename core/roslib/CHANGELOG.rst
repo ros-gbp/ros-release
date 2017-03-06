@@ -2,31 +2,12 @@
 Changelog for package roslib
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.14.0 (2017-02-22)
--------------------
-* update ROS_DISTRO to lunar
-
-1.13.5 (2017-02-14)
+1.12.8 (2017-03-06)
 -------------------
 * fix missing export depends (`#128 <https://github.com/ros/ros/issues/128>`_)
 
-1.13.4 (2016-09-19)
+1.12.7 (2016-04-21)
 -------------------
-
-1.13.3 (2016-09-16)
--------------------
-* allow expected ROS_DISTRO value to be overridden at compile time (`#122 <https://github.com/ros/ros/pull/122>`_)
-
-1.13.2 (2016-09-02)
--------------------
-* avoid putting the rosbuild stacks dir on RPP if it doesn't exist (`#111 <https://github.com/ros/ros/pull/111>`_)
-
-1.13.1 (2016-03-13)
--------------------
-
-1.13.0 (2016-03-10)
--------------------
-* update ROS_DISTRO to kinetic
 
 1.12.6 (2016-03-10)
 -------------------

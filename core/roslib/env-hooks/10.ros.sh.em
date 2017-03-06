@@ -3,17 +3,10 @@
 # scrub old ROS bin dirs, to avoid accidentally finding the wrong executables
 export PATH="`@(PYTHON_EXECUTABLE) -c \"import os; print(os.pathsep.join([x for x in \\\"$PATH\\\".split(os.pathsep) if not any([d for d in ['cturtle', 'diamondback', 'electric', 'fuerte'] if d in x])]))\"`"
 
-@{
-# This is a build-time environment variable which allows a build engineer to override the expected
-# ROS_DISTRO value for a workspace, for example to deliberately use a newer version of roslib with
-# an older release or vice-versa, or to define a custom distro (eg, "ROS Banana").
-from os import environ
-ROS_DISTRO = environ.get("ROS_DISTRO_OVERRIDE", "lunar")
-}@
-if [ -n "$ROS_DISTRO" -a "$ROS_DISTRO" != "@(ROS_DISTRO)" ]; then
+if [ -n "$ROS_DISTRO" -a "$ROS_DISTRO" != "jade" ]; then
   echo "ROS_DISTRO was set to '$ROS_DISTRO' before. Please make sure that the environment does not mix paths from different distributions."
 fi
-export ROS_DISTRO=@(ROS_DISTRO)
+export ROS_DISTRO=jade
 
 # python function to generate ROS package path based on all workspaces
 PYTHON_CODE_BUILD_ROS_PACKAGE_PATH=$(cat <<EOF
@@ -30,8 +23,7 @@ for workspace in workspaces:
         data = f.read()
     if data == '':
         paths.append(os.path.join(workspace, 'share'))
-        if os.path.isdir(os.path.join(workspace, 'stacks')):
-            paths.append(os.path.join(workspace, 'stacks'))
+        paths.append(os.path.join(workspace, 'stacks'))
     else:
         for source_path in data.split(';'):
             paths.append(source_path)
