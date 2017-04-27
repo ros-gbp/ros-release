@@ -1,3 +1,37 @@
+## ros (kinetic) - 1.13.5-1
+
+The packages in the `ros` repository were released into the `kinetic` distro by running `/usr/local/bin/bloom-release ros -r kinetic -t kinetic` on `Thu, 27 Apr 2017 19:23:52 -0000`
+
+These packages were released:
+- `mk`
+- `ros`
+- `rosbash`
+- `rosboost_cfg`
+- `rosbuild`
+- `rosclean`
+- `roscreate`
+- `roslang`
+- `roslib`
+- `rosmake`
+- `rosunit`
+
+Version of package(s) in repository `ros`:
+
+- upstream repository: https://github.com/ros/ros.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `1.13.5-0`
+- new version: `1.13.5-1`
+
+Versions of tools used:
+
+- bloom version: `0.5.26`
+- catkin_pkg version: `0.3.1`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.6.2`
+- vcstools version: `0.1.39`
+
+
 ## ros (indigo) - 1.11.14-0
 
 The packages in the `ros` repository were released into the `indigo` distro by running `/usr/bin/bloom-release -r indigo -t indigo ros` on `Mon, 06 Mar 2017 16:30:39 -0000`
