@@ -119,7 +119,7 @@ tracks:
     last_version: 1.13.5
     name: ros
     patches: null
-    release_inc: '0'
+    release_inc: '1'
     release_repo_url: null
     release_tag: :{version}
     ros_distro: kinetic
