@@ -1,0 +1,13 @@
+Source: ros-lunar-roslang
+Section: misc
+Priority: extra
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Build-Depends: debhelper (>= 9.0.0), ros-lunar-catkin
+Homepage: http://ros.org/wiki/roslang
+Standards-Version: 3.9.2
+
+Package: ros-lunar-roslang
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lunar-catkin, ros-lunar-genmsg
+Description: roslang is a common package that all ROS client libraries depend on.
+ This is mainly used to find client libraries (via 'rospack depends-on1 roslang').
