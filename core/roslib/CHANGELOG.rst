@@ -2,6 +2,13 @@
 Changelog for package roslib
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.14.1 (2017-07-27)
+-------------------
+
+1.14.0 (2017-02-22)
+-------------------
+* update ROS_DISTRO to lunar
+
 1.13.5 (2017-02-14)
 -------------------
 * fix missing export depends (`#128 <https://github.com/ros/ros/issues/128>`_)
