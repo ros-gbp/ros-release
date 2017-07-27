@@ -1,3 +1,37 @@
+## ros (lunar) - 1.14.1-0
+
+The packages in the `ros` repository were released into the `lunar` distro by running `/usr/bin/bloom-release -r lunar -t lunar ros` on `Thu, 27 Jul 2017 14:46:26 -0000`
+
+These packages were released:
+- `mk`
+- `ros`
+- `rosbash`
+- `rosboost_cfg`
+- `rosbuild`
+- `rosclean`
+- `roscreate`
+- `roslang`
+- `roslib`
+- `rosmake`
+- `rosunit`
+
+Version of package(s) in repository `ros`:
+
+- upstream repository: https://github.com/ros/ros.git
+- release repository: https://github.com/ros-gbp/ros-release.git
+- rosdistro version: `1.14.0-0`
+- old version: `1.14.0-0`
+- new version: `1.14.1-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.26`
+- catkin_pkg version: `0.3.5`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.6.2`
+- vcstools version: `0.1.39`
+
+
 ## ros (kinetic) - 1.13.5-1
 
 The packages in the `ros` repository were released into the `kinetic` distro by running `/usr/local/bin/bloom-release ros -r kinetic -t kinetic` on `Thu, 27 Apr 2017 19:23:52 -0000`
