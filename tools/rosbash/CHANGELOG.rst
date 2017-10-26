@@ -2,6 +2,9 @@
 Changelog for package rosbash
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.14.2 (2017-10-26)
+-------------------
+
 1.14.1 (2017-07-27)
 -------------------
 * add options in completion for roslaunch to roszsh (`#147 <https://github.com/ros/ros/issues/147>`_)
