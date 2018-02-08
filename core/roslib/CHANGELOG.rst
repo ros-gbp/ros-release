@@ -2,6 +2,20 @@
 Changelog for package roslib
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.14.3 (2018-01-30)
+-------------------
+* replace env hooks with a dependency on ros_environment (`#166 <https://github.com/ros/ros/issues/166>`_)
+
+1.14.2 (2017-10-26)
+-------------------
+
+1.14.1 (2017-07-27)
+-------------------
+
+1.14.0 (2017-02-22)
+-------------------
+* update ROS_DISTRO to lunar
+
 1.13.6 (2017-10-31)
 -------------------
 
