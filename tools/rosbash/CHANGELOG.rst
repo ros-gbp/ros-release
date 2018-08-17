@@ -2,6 +2,18 @@
 Changelog for package rosbash
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.14.4 (2018-05-01)
+-------------------
+* rosrun: array is now properly expanded in debug-echo (`#176 <https://github.com/ros/ros/issues/176>`_)
+* rosbash: replaced `...` with $(...) (`#177 <https://github.com/ros/ros/issues/177>`_)
+* rosrun: replaced `...` with $(...) (`#175 <https://github.com/ros/ros/issues/175>`_)
+* rosfish: fix syntax error (`#171 <https://github.com/ros/ros/issues/171>`_)
+* fix zsh tab completion for symlinks (`#169 <https://github.com/ros/ros/issues/169>`_)
+
+1.14.3 (2018-01-30)
+-------------------
+* do not remove paths containing ./ or ../ from completion (`#162 <https://github.com/ros/ros/issues/162>`_)
+
 1.14.2 (2017-10-26)
 -------------------
 
@@ -12,6 +24,11 @@ Changelog for package rosbash
 
 1.14.0 (2017-02-22)
 -------------------
+
+1.13.6 (2017-10-31)
+-------------------
+* add options in completion for roslaunch to roszsh (`#147 <https://github.com/ros/ros/issues/147>`_)
+* allow arguments in EDITOR env in zsh rosed (`#144 <https://github.com/ros/ros/pull/144>`_)
 
 1.13.5 (2017-02-14)
 -------------------
