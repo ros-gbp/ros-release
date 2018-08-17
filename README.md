@@ -1,3 +1,37 @@
+## ros (lunar) - 1.14.4-0
+
+The packages in the `ros` repository were released into the `lunar` distro by running `/usr/bin/bloom-release -r lunar -t lunar ros` on `Fri, 17 Aug 2018 22:02:26 -0000`
+
+These packages were released:
+- `mk`
+- `ros`
+- `rosbash`
+- `rosboost_cfg`
+- `rosbuild`
+- `rosclean`
+- `roscreate`
+- `roslang`
+- `roslib`
+- `rosmake`
+- `rosunit`
+
+Version of package(s) in repository `ros`:
+
+- upstream repository: https://github.com/ros/ros.git
+- release repository: https://github.com/ros-gbp/ros-release.git
+- rosdistro version: `1.14.2-0`
+- old version: `1.14.2-0`
+- new version: `1.14.4-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.6`
+- catkin_pkg version: `0.4.8`
+- rosdep version: `0.12.2`
+- rosdistro version: `0.6.9`
+- vcstools version: `0.1.40`
+
+
 ## ros (melodic) - 1.14.4-0
 
 The packages in the `ros` repository were released into the `melodic` distro by running `/usr/bin/bloom-release -r melodic -t melodic ros` on `Tue, 01 May 2018 19:39:12 -0000`
