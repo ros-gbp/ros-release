@@ -2,6 +2,9 @@
 Changelog for package roslib
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.14.6 (2019-03-18)
+-------------------
+
 1.14.5 (2019-03-04)
 -------------------
 * disable test with invalid dependency (`#202 <https://github.com/ros/ros/issues/202>`_)
