@@ -2,6 +2,9 @@
 Changelog for package rosmake
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.14.6 (2019-03-18)
+-------------------
+
 1.14.5 (2019-03-04)
 -------------------
 * fall back to default value if modules are not available (`#199 <https://github.com/ros/ros/issues/199>`_)

@@ -2,6 +2,9 @@
 Changelog for package roscreate
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.14.6 (2019-03-18)
+-------------------
+
 1.14.5 (2019-03-04)
 -------------------
 * chmod -x on Python modules (`#183 <https://github.com/ros/ros/issues/183>`_)
