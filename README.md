@@ -1,3 +1,37 @@
+## ros (melodic) - 1.14.7-1
+
+The packages in the `ros` repository were released into the `melodic` distro by running `/home/dthomas/ros/github/ros-infrastructure/bloom/scripts/bloom-release -r melodic -t melodic ros` on `Thu, 03 Oct 2019 23:25:13 -0000`
+
+These packages were released:
+- `mk`
+- `ros`
+- `rosbash`
+- `rosboost_cfg`
+- `rosbuild`
+- `rosclean`
+- `roscreate`
+- `roslang`
+- `roslib`
+- `rosmake`
+- `rosunit`
+
+Version of package(s) in repository `ros`:
+
+- upstream repository: https://github.com/ros/ros.git
+- release repository: https://github.com/ros-gbp/ros-release.git
+- rosdistro version: `1.14.6-0`
+- old version: `1.14.6-0`
+- new version: `1.14.7-1`
+
+Versions of tools used:
+
+- bloom version: `0.6.9`
+- catkin_pkg version: `0.4.13`
+- rosdep version: `0.16.1`
+- rosdistro version: `0.7.4`
+- vcstools version: `0.1.42`
+
+
 ## ros (kinetic) - 1.14.6-1
 
 The packages in the `ros` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release -r kinetic -t kinetic ros` on `Sat, 08 Jun 2019 04:58:04 -0000`
