@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.0.2)
 project(rosbash)
 find_package(catkin)
 catkin_package()
@@ -6,7 +6,7 @@ catkin_package()
 install(FILES rosbash rosfish rostcsh roszsh
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
 if (WIN32)
-  install(PROGRAMS scripts/rosrun.bat
+  install(PROGRAMS scripts/rosrun.bat scripts/roscp.bat
     DESTINATION ${CATKIN_GLOBAL_BIN_DESTINATION})
 
   install(PROGRAMS scripts/rosfindpath.py scripts/roscd.bat scripts/rosls.bat
