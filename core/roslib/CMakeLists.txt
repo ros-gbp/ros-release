@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.0.2)
 project(roslib)
 find_package(catkin REQUIRED COMPONENTS rospack)
 catkin_package(
@@ -38,6 +38,7 @@ catkin_install_python(PROGRAMS scripts/gendeps
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 
 if(CATKIN_ENABLE_TESTING)
+  find_package(Boost REQUIRED COMPONENTS filesystem thread)
   catkin_add_nosetests(test)
 
   catkin_add_gtest(${PROJECT_NAME}-utest test/utest.cpp WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
