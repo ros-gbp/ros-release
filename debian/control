@@ -1,0 +1,12 @@
+Source: ros-noetic-rosbash
+Section: misc
+Priority: optional
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin (>= 0.7.15)
+Homepage: http://www.ros.org/wiki/rosbash
+Standards-Version: 3.9.2
+
+Package: ros-noetic-rosbash
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-catkin, ros-noetic-rospack
+Description: Assorted shell commands for using ros with bash.
