@@ -1,1 +1,1 @@
-{"trim": "", "base": "f38da0499", "trimbase": "", "parent": "debian/melodic/roslib", "previous": "8d1f6faa2"}
+{"base": "0443c20ec", "parent": "debian/melodic/roslib", "previous": "35606a889", "trim": "", "trimbase": ""}
