@@ -2,6 +2,9 @@
 Changelog for package rosbash
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.15.1 (2020-03-17)
+-------------------
+
 1.15.0 (2020-02-11)
 -------------------
 * add heuristic to run python devel space relays (`#233 <https://github.com/ros/ros/issues/233>`_)
