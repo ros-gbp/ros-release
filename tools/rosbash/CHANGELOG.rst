@@ -2,6 +2,10 @@
 Changelog for package rosbash
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.15.2 (2020-04-07)
+-------------------
+* add rosmv shell function to move a file from package to target (`#247 <https://github.com/ros/ros/issues/247>`_)
+
 1.15.1 (2020-03-17)
 -------------------
 
