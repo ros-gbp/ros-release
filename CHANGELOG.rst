@@ -2,6 +2,9 @@
 Changelog for package rosclean
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.15.3 (2020-05-14)
+-------------------
+
 1.15.2 (2020-04-07)
 -------------------
 * fix log purge on Windows (`#251 <https://github.com/ros/ros/issues/251>`_)
