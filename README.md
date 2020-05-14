@@ -1,3 +1,37 @@
+## ros (noetic) - 1.15.3-1
+
+The packages in the `ros` repository were released into the `noetic` distro by running `/usr/bin/bloom-release -r noetic -t noetic ros` on `Thu, 14 May 2020 22:10:27 -0000`
+
+These packages were released:
+- `mk`
+- `ros`
+- `rosbash`
+- `rosboost_cfg`
+- `rosbuild`
+- `rosclean`
+- `roscreate`
+- `roslang`
+- `roslib`
+- `rosmake`
+- `rosunit`
+
+Version of package(s) in repository `ros`:
+
+- upstream repository: https://github.com/ros/ros.git
+- release repository: https://github.com/ros-gbp/ros-release.git
+- rosdistro version: `1.15.1-1`
+- old version: `1.15.2-1`
+- new version: `1.15.3-1`
+
+Versions of tools used:
+
+- bloom version: `0.9.7`
+- catkin_pkg version: `0.4.20`
+- rosdep version: `0.19.0`
+- rosdistro version: `0.8.1`
+- vcstools version: `0.1.42`
+
+
 ## ros (melodic) - 1.14.9-1
 
 The packages in the `ros` repository were released into the `melodic` distro by running `/usr/bin/bloom-release -r melodic -t melodic ros` on `Mon, 20 Apr 2020 21:21:24 -0000`
