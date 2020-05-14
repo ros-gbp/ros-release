@@ -2,8 +2,20 @@
 Changelog for package rosbash
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.14.9 (2020-04-20)
+1.15.3 (2020-05-14)
 -------------------
+* update rosmv function to move file and package both (`#254 <https://github.com/ros/ros/issues/254>`_)
+
+1.15.2 (2020-04-07)
+-------------------
+* add rosmv shell function to move a file from package to target (`#247 <https://github.com/ros/ros/issues/247>`_)
+
+1.15.1 (2020-03-17)
+-------------------
+
+1.15.0 (2020-02-11)
+-------------------
+* add heuristic to run python devel space relays (`#233 <https://github.com/ros/ros/issues/233>`_)
 
 1.14.8 (2020-02-11)
 -------------------
