@@ -139,7 +139,7 @@ def get_human_readable_disk_usage(d):
     # only implemented on Linux and FreeBSD for now. Should work on OS X but need to verify first (du is not identical)
     if platform.system() in ['Linux', 'FreeBSD']:
         try:
-            return subprocess.Popen(['du', '-sh', d], stdout=subprocess.PIPE).communicate()[0].split()[0]
+            return subprocess.Popen(['du', '-sh', d], stdout=subprocess.PIPE).communicate()[0].split()[0].decode()
         except Exception:
             raise CleanupException('rosclean is not supported on this platform')
     elif platform.system() == 'Windows':
@@ -245,7 +245,7 @@ def rosclean_main(argv=None):
     if argv is None:
         argv = sys.argv
     parser = argparse.ArgumentParser(prog='rosclean')
-    subparsers = parser.add_subparsers()  # help='sub-command help')
+    subparsers = parser.add_subparsers(required=True, dest='{check,purge}')  # help='sub-command help')
     parser_check = subparsers.add_parser('check', help='Check usage of log files')
     parser_check.set_defaults(func=_rosclean_cmd_check)
     parser_purge = subparsers.add_parser('purge', help='Remove log files')
