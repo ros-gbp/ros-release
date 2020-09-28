@@ -2,6 +2,9 @@
 Changelog for package roscreate
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.15.7 (2020-09-28)
+-------------------
+
 1.15.6 (2020-07-20)
 -------------------
 * fix string encoding in roscreate-pkg with Python 3 (`#267 <https://github.com/ros/ros/issues/267>`_)
