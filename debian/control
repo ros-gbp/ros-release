@@ -1,0 +1,12 @@
+Source: ros-noetic-ros
+Section: misc
+Priority: optional
+Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin
+Homepage: http://www.ros.org/wiki/ROS
+Standards-Version: 3.9.2
+
+Package: ros-noetic-ros
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-catkin, ros-noetic-mk, ros-noetic-rosbash, ros-noetic-rosboost-cfg, ros-noetic-rosbuild, ros-noetic-rosclean, ros-noetic-roscreate, ros-noetic-roslang, ros-noetic-roslib, ros-noetic-rosmake, ros-noetic-rosunit
+Description: ROS packaging system
