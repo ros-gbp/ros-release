@@ -2,6 +2,9 @@
 Changelog for package roslang
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.15.9 (2025-04-10)
+-------------------
+
 1.15.8 (2021-07-21)
 -------------------
 * Update maintainers (`#272 <https://github.com/ros/ros/issues/272>`_)
