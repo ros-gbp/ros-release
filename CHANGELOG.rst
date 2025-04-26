@@ -2,6 +2,11 @@
 Changelog for package rosbash
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.15.10 (2025-04-26)
+--------------------
+* Call realpaths for roslaunch and rosbash. (`#309 <https://github.com/ros/ros/issues/309>`_)
+* Contributors: Ivor Wanders
+
 1.15.9 (2025-04-10)
 -------------------
 * roszsh: Fix rosmv completion (`#280 <https://github.com/ros/ros/issues/280>`_)
